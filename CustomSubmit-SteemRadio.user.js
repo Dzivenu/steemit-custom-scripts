@@ -4,9 +4,9 @@
 // @author        eaposztrof
 // @updateURL     https://raw.githubusercontent.com/eapo/steemit-custom-scripts/master/CustomSubmit-SteemRadio.user.js
 // @downloadURL   https://raw.githubusercontent.com/eapo/steemit-custom-scripts/master/CustomSubmit-SteemRadio.user.js
-// @supportURL    https://steemit.com/steemit/@eaposztrof
+// @supportURL    https://github.com/eapo/steemit-custom-scripts/issues?q=is%3Aissue+is%3Aopen+-label%3Abug
 // @icon          https://steemitimages.com/0x0/https://pbs.twimg.com/profile_images/863235834379632640/EaeAlfaC.jpg
-// @homepageURL   https://github.com/eapo/steemit-custom-scripts
+// @homepageURL   https://steemit.com/@eaposztrof
 // @include       http://steemit.com/*
 // @include       https://steemit.com/*
 // @include       http://*.steemit.com/*
