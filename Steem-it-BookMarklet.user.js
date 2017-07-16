@@ -2,8 +2,8 @@
 // @name          Steemit.com CustomSubmit +Steem it! BookMarklet
 // @description   Steem it! Bookmarklet in Bookmark Bar to post more quickly...
 // @author        eaposztrof
-// @updateURL     https://raw.githubusercontent.com/eapo/steemit-custom-scripts/master/CustomSubmit-BookMarklet.user.js
-// @downloadURL   https://raw.githubusercontent.com/eapo/steemit-custom-scripts/master/CustomSubmit-BookMarklet.user.js
+// @updateURL     https://github.com/eapo/steemit-custom-scripts/raw/master/Steem-it-BookMarklet.user.js
+// @downloadURL   https://github.com/eapo/steemit-custom-scripts/raw/master/Steem-it-BookMarklet.user.js
 // @supportURL    https://github.com/eapo/steemit-custom-scripts/issues?q=is%3Aissue+is%3Aopen+-label%3Abug
 // @icon          https://steemitimages.com/0x0/https://pbs.twimg.com/profile_images/863235834379632640/EaeAlfaC.jpg
 // @homepageURL   https://steemit.com/@eaposztrof
