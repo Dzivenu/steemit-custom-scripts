@@ -13,7 +13,7 @@
 // @include       https://*.steemit.com/*
 // @require       https://code.jquery.com/jquery-1.8.3.js
 // @run-at        document-start
-// @version       0.2
+// @version       1.0
 // ==/UserScript==
 
 (function() {
