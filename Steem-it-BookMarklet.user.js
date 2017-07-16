@@ -13,7 +13,7 @@
 // @include       https://*.steemit.com/*
 // @require       https://code.jquery.com/jquery-1.8.3.js
 // @run-at        document-start
-// @version       1.0
+// @version       0.2
 // ==/UserScript==
 
 (function() {
@@ -151,7 +151,7 @@
 
         var mainMenu = $('.Header__top .columns:first-child ul.menu').detach();
         mainMenu.prependTo('.SidePanel > div');
-        
+
         $('span.PostFull__reply > a:nth-child(2)').on('click',function(e){
             e.preventDefault();
             window.location.hash = $(this).text();
@@ -230,7 +230,7 @@
         // /BookMarklet
 
         /* Bookmaklet code
-        var str = prompt('Steem it!', '[![steemit-logo-25px.png](https://steemitimages.com/DQmemVjTFX7eS4pF7yffisS9UroNKiSjYtN53q8gx1keSRM/steemit-logo-25px.png) steem<sup>&#10084;</sup>](https://steemit.com/trending/steem-promo)');
+        javascript:var str = prompt('Steem it!', '[![steemit-logo-25px.png](https://steemitimages.com/DQmemVjTFX7eS4pF7yffisS9UroNKiSjYtN53q8gx1keSRM/steemit-logo-25px.png) steem<sup>&#10084;</sup>](https://steemit.com/trending/steem-promo)');
 
         function utoa(str) {
             return window.btoa(unescape(encodeURIComponent(str)));
@@ -242,13 +242,12 @@
         }
         window.open('https://steemit.com/submit.html?body=' + utoa(content) + '&title=' + utoa(document.title), '_blank', false);
         */
-        /* /Bookmaklet code
+        // /Bookmaklet code
 
         /* Bookmaklet code.minified
-        function utoa(t){return window.btoa(unescape(encodeURIComponent(t)))}var str=prompt("Steem it!","[![steemit-logo-25px.png](https://steemitimages.com/DQmemVjTFX7eS4pF7yffisS9UroNKiSjYtN53q8gx1keSRM/steemit-logo-25px.png) steem<sup>&#10084;</sup>](https://steemit.com/trending/steem-promo)");str.length>0?content=str:content=document.location.href,window.open("https://steemit.com/submit.html?body="+utoa(content)+"&title="+utoa(document.title),"_blank",!1);
+        javascript:function utoa(t){return window.btoa(unescape(encodeURIComponent(t)))}var str=prompt("Steem it!","[![steemit-logo-25px.png](https://steemitimages.com/DQmemVjTFX7eS4pF7yffisS9UroNKiSjYtN53q8gx1keSRM/steemit-logo-25px.png) steem<sup>&#10084;</sup>](https://steemit.com/trending/steem-promo)");str.length>0?content=str:content=document.location.href,window.open("https://steemit.com/submit.html?body="+utoa(content)+"&title="+utoa(document.title),"_blank",!1);
         */
-        /* /Bookmaklet code.minified
-
+        // Bookmaklet code.minified
 
     });
 
