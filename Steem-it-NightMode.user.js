@@ -14,14 +14,14 @@
 // @include       https://*.steemit.com/*
 // @require       https://code.jquery.com/jquery-1.8.3.js
 // @run-at        document-start
-// @version       0.1
+// @version       0.1.4
 // ==/UserScript==
 
 (function() {var css = [
     "html, .UserProfile__banner.row.expanded, .App__content, div.Header__top.header, .UserProfile__top, .drag-and-drop, .App, .index-page, .Header, .menu, div.Header__sub-nav.expanded.show-for-medium.row, .Reputation, .PostsList__post_container, .dropdown-pane {",
     "background-color: #fefefe",
     "}",
-    "body {",
+    "body, .videoWrapper {",
     "filter: invert(1);",
     "}",
     ".Header__sub-nav li>a {",
@@ -39,7 +39,7 @@
     "img:hover, .Userpic:hover, .PostSummary__image:hover {",
     "opacity: 1;",
     "}",
-    ".PostsList .PostSummary__image:hover, #content .Userpic:hover {",
+    ".PostsList .PostSummary__image:hover, body .Userpic:hover {",
     "position: absolute;",
     "min-width: 256px;",
     "min-height: 169px;",
@@ -48,11 +48,12 @@
     "border: none;",
     "z-index: 999",
     "}",
-    "#content .Userpic:hover {",
+    "body .Userpic:hover {",
     "min-width: 256px;",
     "min-height: 256px;",
     "border-radius: 0;",
-    "margin-left: -256px;",
+    "margin-left: -200px;",
+    "margin-top: -23px",
     "}",
     ".PostsList__post_container .PostFull, .ReplyEditor__options select  {",
     "border-bottom: 1px solid rgba(255, 255, 255, 0.26) !important;",
@@ -130,32 +131,63 @@
     ".ReplyEditor.row {",
     "max-width: 100% !important;",
     "}",
+    "li.Header__userpic {",
+    " margin-right: 50px;",
+    "}",
+    ".Header__top.header .columns {",
+    " padding: 0;",
+    "}",
+    "li.Header__top-steemit, li.delim {",
+    " display: none;",
+    "}",
+    "li.submit-story {",
+    " padding: 0 !important;",
+    " text-indent: -70px;",
+    " display: none;",
+    " overflow: hidden;",
+    "}",
+    "li.toggle-menu.Header__hamburger {",
+    " position: absolute;",
+    " top: 0;",
+    " right: 0;",
+    " background-color: #777;",
+    "}",
+    "li.show-for-small-only {",
+    " display: block !important;",
+    " padding: 0 !important;",
+    "}",
+    "li.show-for-small-only > a {",
+    " padding: .7rem;",
+    "}",
+    "a span.Icon > * > * {",
+    " fill: #164584 !important;",
+    "}",
 ].join("\n");
 
-             if (typeof GM_addStyle != "undefined") {
-                 GM_addStyle(css);
-             } else if (typeof PRO_addStyle != "undefined") {
-                 PRO_addStyle(css);
-             } else if (typeof addStyle != "undefined") {
-                 addStyle(css);
-             } else {
-                 var node = document.createElement("style");
-                 node.type = "text/css";
-                 node.appendChild(document.createTextNode(css));
-                 var heads = document.getElementsByTagName("head");
-                 if (heads.length > 0) {
-                     heads[0].appendChild(node);
-                 } else {
-                     // no head yet, stick it whereever
-                     document.documentElement.appendChild(node);
-                 }
-             }
+ if (typeof GM_addStyle != "undefined") {
+     GM_addStyle(css);
+ } else if (typeof PRO_addStyle != "undefined") {
+     PRO_addStyle(css);
+ } else if (typeof addStyle != "undefined") {
+     addStyle(css);
+ } else {
+     var node = document.createElement("style");
+     node.type = "text/css";
+     node.appendChild(document.createTextNode(css));
+     var heads = document.getElementsByTagName("head");
+     if (heads.length > 0) {
+         heads[0].appendChild(node);
+     } else {
+         // no head yet, stick it whereever
+         document.documentElement.appendChild(node);
+     }
+ }
 
-             jQuery(document).ready(function($) {
+ jQuery(document).ready(function($) {
 
-                 var mainMenu = $('.Header ul.HorizontalMenu.menu > *').detach();
-                 mainMenu.appendTo('.Header__top .columns:first-child ul.menu');
+     var mainMenu = $('.Header ul.HorizontalMenu.menu > *').detach();
+     mainMenu.appendTo('.Header__top .columns:first-child ul.menu');
 
-             })();
+ })();
 
-            })();
+})();
