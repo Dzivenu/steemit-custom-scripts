@@ -14,7 +14,7 @@
 // @include       https://*.steemit.com/*
 // @require       https://code.jquery.com/jquery-1.8.3.js
 // @run-at        document-start
-// @version       0.1.4
+// @version       0.1.5
 // ==/UserScript==
 
 (function() {var css = [
@@ -71,7 +71,16 @@
     "min-height: 1000px !important;",
     "}",
     ".UserProfile__top-nav {",
-    "padding: 0;",
+    " padding: 0;",
+    " background-color: rgba(51, 51, 51, 0.5);",
+    "}",
+    "label.button.slim.hollow.secondary:first-child {",
+    " font-weight: bold;",
+    " padding: 1rem;",
+    " float: right;",
+    " color: #fefefe;",
+    " box-shadow: #fefefe 1px 1px 2px;",
+    " background-color: #1a5099;",
     "}",
     ".UserProfile__banner>div.column, .UserProfile__banner>div.columns {",
     "opacity: 0.7;",
@@ -97,7 +106,7 @@
     "box-shadow: inset -1px -1px 0px #ccc;",
     "padding: 0.2em 0.4em;",
     "}",
-    ".SidePanel>div .menu>li>a, .VerticalMenu>li>a, blockquote, .UserProfile__banner .UserProfile__buttons label.button, .UserProfile__top-nav .menu>li>a.active, .UserProfile__top-nav  {",
+    ".SidePanel>div .menu>li>a, .VerticalMenu>li>a, blockquote, .UserProfile__banner .UserProfile__buttons label.button, .UserProfile__top-nav .menu>li>a.active {",
     " background-color: transparent !important;",
     "}",
     ".SidePanel .menu>li>a {",
