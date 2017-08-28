@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name          DTube + js-markdown-extra
+// @name          DTube Beautifier +js-markdown-extra
 // @description   Automaticaly Convert DTube Markdown comments to HTML in browser supported by jsdelivr.net CDN
 // @author        eaposztrof
-// @updateURL     https://github.com/eapo/steemit-custom-scripts/raw/master/DTube+js-markdown-extra.user.js
-// @downloadURL   https://github.com/eapo/steemit-custom-scripts/raw/master/DTube+js-markdown-extra.user.js
+// @updateURL     https://github.com/eapo/steemit-custom-scripts/raw/master/DTube-Beautifier.user.js
+// @downloadURL   https://github.com/eapo/steemit-custom-scripts/raw/master/DTube-Beautifier.user.js
 // @supportURL    https://github.com/eapo/steemit-custom-scripts/issues?q=is%3Aissue+is%3Aopen+-label%3Abug
 // @icon          https://steemitimages.com/0x0/https://pbs.twimg.com/profile_images/863235834379632640/EaeAlfaC.jpg
 // @homepageURL   https://steemit.com/@eaposztrof
