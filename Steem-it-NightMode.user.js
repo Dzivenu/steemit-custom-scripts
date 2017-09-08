@@ -14,7 +14,7 @@
 // @include       https://*.steemit.com/*
 // @require       https://code.jquery.com/jquery-1.8.3.js
 // @run-at        document-start
-// @version       0.1.7
+// @version       0.1.8
 // ==/UserScript==
 
 (function() {var css = [
@@ -31,7 +31,7 @@
     "box-shadow: inset 1px 1px 2px #333;",
     "padding-bottom: 10em;",
     "}",
-    "img, .Header__userpic .Userpic, .PostSummary__image, .UserProfile__banner>div.column {",
+    "img, .Header__userpic .Userpic, .Post .Userpic, .Author .Userpic, .PostSummary__image, .UserProfile__banner>div.column {",
     "opacity: 0.6;",
     "position: relative;",
     "filter:invert(1) !important",
