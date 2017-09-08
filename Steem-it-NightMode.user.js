@@ -14,7 +14,7 @@
 // @include       https://*.steemit.com/*
 // @require       https://code.jquery.com/jquery-1.8.3.js
 // @run-at        document-start
-// @version       0.1.5
+// @version       0.1.7
 // ==/UserScript==
 
 (function() {var css = [
@@ -29,14 +29,14 @@
     "}",
     "body, .SidePanel>div {",
     "box-shadow: inset 1px 1px 2px #333;",
-    "padding: 1px;",
+    "padding-bottom: 10em;",
     "}",
-    "img, body .Userpic, .PostSummary__image {",
+    "img, .Header__userpic .Userpic, .PostSummary__image, .UserProfile__banner>div.column {",
     "opacity: 0.6;",
     "position: relative;",
     "filter:invert(1) !important",
     "}",
-    "img:hover, .Userpic:hover, .PostSummary__image:hover {",
+    "img:hover, .Userpic:hover, .PostSummary__image:hover, .UserProfile__banner>div.column:hover {",
     "opacity: 1;",
     "}",
     ".PostsList .PostSummary__image:hover, body .Userpic:hover {",
@@ -72,7 +72,7 @@
     "}",
     ".UserProfile__top-nav {",
     " padding: 0;",
-    " background-color: rgba(51, 51, 51, 0.5);",
+    " background-color: rgba(26, 80, 153, 0.5) !important;",
     "}",
     "label.button.slim.hollow.secondary:first-child {",
     " font-weight: bold;",
@@ -81,9 +81,6 @@
     " color: #fefefe;",
     " box-shadow: #fefefe 1px 1px 2px;",
     " background-color: #1a5099;",
-    "}",
-    ".UserProfile__banner>div.column, .UserProfile__banner>div.columns {",
-    "opacity: 0.7;",
     "}",
     ".callout {",
     "}",
@@ -107,7 +104,7 @@
     "padding: 0.2em 0.4em;",
     "}",
     ".SidePanel>div .menu>li>a, .VerticalMenu>li>a, blockquote, .UserProfile__banner .UserProfile__buttons label.button, .UserProfile__top-nav .menu>li>a.active {",
-    " background-color: transparent !important;",
+    " background-color: rgba(26, 80, 153, 0.2) !important;",
     "}",
     ".SidePanel .menu>li>a {",
     "padding: 0.3em !important;",
@@ -170,6 +167,10 @@
     "}",
     "a span.Icon > * > * {",
     " fill: #164584 !important;",
+    "}",
+    ".PostSummary__collapse {",
+    " position: relative;",
+    " z-index: 2;",
     "}",
 ].join("\n");
 
